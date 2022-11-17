@@ -15,7 +15,7 @@ Inicio
  
  cm <- dp / cg
  
- escreva("Consumo médio = ", cm:4:3)
+ escreva("Consumo médio = ", cm:5:3)
 
 
 
