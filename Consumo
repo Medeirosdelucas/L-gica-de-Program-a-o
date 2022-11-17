@@ -1,0 +1,22 @@
+Algoritmo "consumo"
+
+Var
+
+    dp : inteiro   // dp = distancia percorrida
+    cg, cm : real      //cg = combustível gasto e cm = consumo médio
+
+
+Inicio
+
+ escreva("Distancia percorrida: ")
+ leia(dp)
+ escreva("Combustível gasto: ")
+ leia(cg)
+ 
+ cm <- dp / cg
+ 
+ escreva("Consumo médio = ", cm:4:3)
+
+
+
+Fimalgoritmo
