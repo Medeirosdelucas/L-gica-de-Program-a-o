@@ -1,0 +1,28 @@
+Algoritmo "soma_impares"
+
+Var
+
+x, y, i, v, soma : inteiro
+
+Inicio
+
+    escreval("Digite os dois numeros: ")
+    leia(x)
+    leia(y)
+    
+    se x > y entao
+    i <- x
+    x <- y
+    y <- i
+    fimse
+    
+    soma <- 0
+    para v de x+1 até y-1 faca
+    se v % 2 <> 0 entao
+    soma <- soma + v
+
+    fimse
+    fimpara
+    
+    escreval("Soma dos impares = ",soma)
+Fimalgoritmo
