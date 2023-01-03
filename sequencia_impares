@@ -1,0 +1,18 @@
+Algoritmo "sequencia_impares"
+
+Var
+
+  x, impares : inteiro
+
+Inicio
+
+     escreva("Digite o valor de X: ")
+     leia(x)
+     
+     para impares de 1 ate x faca
+     se   impares % 2 <> 0 entao
+     escreval(impares)
+     
+     fimse
+     fimpara
+Fimalgoritmo
