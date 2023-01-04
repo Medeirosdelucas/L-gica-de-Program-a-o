@@ -1,0 +1,51 @@
+Algoritmo "cobaia"
+
+Var
+
+  n, i, qtde, tcobaias, tsapos, tcoelhos, tratos : inteiro // t = total
+  pratos, psapos, pcoelhos  : real
+  classe : caractere
+
+Inicio
+
+  tsapos <- 0
+  tcoelhos <- 0
+  tratos <- 0
+
+  escreva("Quantos casos do teste serao digitados? ")
+  leia(n)
+  
+  para i de 1 ate n faca
+  escreva("Quantidade de cobaias: ")
+  leia(qtde)
+  escreva("Tipo de cobaia: ")
+  leia(classe)
+  
+  se classe = "r" entao
+  tratos <- tratos + qtde
+  senao
+  se classe = "s" entao
+  tsapos <- tsapos + qtde
+  senao
+  tcoelhos <- tcoelhos + qtde
+  
+  fimse
+  fimse
+  fimpara
+  
+  tcobaias <- tratos + tsapos + tcoelhos
+  pcoelhos <- tcoelhos / tcobaias * 100
+  pratos <- tratos / tcobaias * 100
+  psapos <- tsapos / tcobaias * 100
+  
+  escreval
+  escreval("RELATORIO FINAL")
+  escreval("Total: ", tcobaias, " cobaias ")
+  escreval("Total de coelhos: ", tcoelhos)
+  escreval("Total de ratos: ", tratos)
+  escreval("Total de sapos: ", tsapos)
+  escreval("Percentual de coelhos", pcoelhos:4:2)
+  escreval("Percentual de ratos", pratos:4:2)
+  escreval("Percentual de sapos", psapos:4:2)
+  
+Fimalgoritmo
